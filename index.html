@@ -1,0 +1,116 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BinauraLab Infinity Sound</title>
+        <style>
+            :root {
+                --bg-color: #050a14;
+                --neon-blue: #00f3ff;
+                --neon-purple: #bc13fe;
+                --text-color: #ffffff;
+            }
+            
+            body {
+                background-color: var(--bg-color);
+                color: var(--text-color);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                background-image: radial-gradient(circle at 50% 50%, #1a2a4a 0%, #050a14 70%);
+            }
+
+            .container {
+                text-align: center;
+                width: 90%;
+                max-width: 400px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                background: -webkit-linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                filter: drop-shadow(0 0 10px rgba(0, 243, 255, 0.3));
+            }
+
+            p {
+                color: #a0a0a0;
+                margin-bottom: 2rem;
+                font-size: 1rem;
+            }
+
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 20px;
+                margin-bottom: 20px;
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 12px;
+                text-decoration: none;
+                color: white;
+                font-size: 1.1rem;
+                font-weight: bold;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(10px);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .btn:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+                border-color: var(--neon-blue);
+                background: rgba(0, 243, 255, 0.1);
+            }
+
+            .btn-br { border-left: 4px solid #009c3b; }
+            .btn-global { border-left: 4px solid #00f3ff; }
+
+            .flag { font-size: 1.5rem; margin-right: 15px; }
+            .price { font-size: 0.9rem; opacity: 0.7; margin-left: auto; }
+
+            footer {
+                margin-top: 2rem;
+                font-size: 0.8rem;
+                color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>BINAURALAB</h1>
+            <p>Select your region / Selecione sua região</p>
+
+            <a href="https://pay.kiwify.com.br/vvjHM5v" class="btn btn-br">
+                <span class="flag">🇧🇷</span>
+                <span>COMPRAR NO BRASIL</span>
+                <span class="price">R$ 19,90</span>
+            </a>
+
+            <a href="https://lrvelloso.gumroad.com/l/binauralab" class="btn btn-global">
+                <span class="flag">🌎</span>
+                <span>GLOBAL / USD</span>
+                <span class="price">$9.00</span>
+            </a>
+
+            <footer>
+                © 2025 BinauraLab Technology<br>DSP Engineered Audio
+            </footer>
+        </div>
+    </body>
+    </html>
+    
